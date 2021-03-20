@@ -18,5 +18,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         android:text="spinner"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoCompleteTextView"
+        android:text="AutoCompleteTextView"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Recycle"
+        android:text="RecycleView"/>
 </LinearLayout>

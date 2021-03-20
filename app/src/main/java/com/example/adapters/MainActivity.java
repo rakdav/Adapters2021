@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button b1,b2;
+    private Button b1,b2,b3,b4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b1.setOnClickListener(this);
         b2=findViewById(R.id.spinner);
         b2.setOnClickListener(this);
+        b3=findViewById(R.id.autoCompleteTextView);
+        b3.setOnClickListener(this);
+        b4=findViewById(R.id.Recycle);
+        b4.setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.spinner:
                 intent=new Intent(MainActivity.this,SpinnerActivity.class);
+                break;
+            case R.id.autoCompleteTextView:
+                intent=new Intent(MainActivity.this,AutoCompliteActivity.class);
+                break;
+            case R.id.Recycle:
+                intent=new Intent(MainActivity.this,RecycleActivity.class);
                 break;
         }
         startActivity(intent);
